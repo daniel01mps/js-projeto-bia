@@ -23,14 +23,14 @@ numero.onchange = () => {
             mensagem.innerHTML = `Parabéns o número é: ${numeroGerado}`;
             resultado.style.display = 'block';
             numero.disabled = true;
-            bia.src = "bia-sorrindo.png";
+            bia.src = "feliz.png";
             reiniciar.innerText = 'Jogar novamente';
             reiniciar.style.display = 'block';
         }
         numero.value = '';
         palpites.innerHTML = tentativas.join('-');
     } else {
-        bia.src = "bia-chorando.png";
+        bia.src = "triste.png";
         mensagem.innerHTML = `Você não acertou o número era: ${numeroGerado}`;
         resultado.style.display = 'block';
         reiniciar.style.display = 'block';
